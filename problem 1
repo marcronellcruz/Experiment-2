@@ -1,0 +1,71 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    char Package;
+    int Time, Bill;
+
+    cout << "Package purchased:";
+    cin >> Package;
+
+    cout << "Total hours used: ";
+    cin >> Time;
+
+    if (Package == 'A' && Time <= 10)
+	{
+        cout << "Total bill: 995 pesos " << endl;
+    } 
+	else if (Package == 'A' && Time >= 11)
+	{
+
+        Bill = (((Time - 10) * 20) + 995);
+        cout << "Total bill: " << Bill << " pesos";
+
+    } 
+	else if (Package == 'B' && Time <= 20)
+	{
+        cout << "Total bill: 1495 pesos " << endl;
+    } 
+	else if (Package == 'B' && Time >= 21)
+	{
+
+        Bill = (((Time - 20) * 10) + 1495);
+        cout << "Total bill: " << Bill << " pesos";
+
+    }  
+	else if (Package == 'C')
+	{
+        cout << "Total bill: 1995 pesos " << endl;
+    }  
+	else if (Package == 'a' && Time <= 10)
+	{
+        cout << "Total bill: 995 pesos " << endl;
+    } 
+	else if (Package == 'a' && Time >= 11)
+	{
+
+        Bill = (((Time - 10) * 20) + 995);
+        cout << "Total bill: " << Bill << " pesos";
+
+    } 
+	else if (Package == 'b' && Time <= 20)
+	{
+        cout << "Total bill: 1495 pesos " << endl;
+    } 
+	else if (Package == 'b' && Time >= 21)
+	{
+
+        Bill = (((Time - 20) * 10) + 1495);
+        cout << "Total bill: " << Bill << " pesos";
+
+    }  
+	else if (Package == 'c')
+	{
+        cout << "Total bill: 1995 pesos " << endl;
+    }  
+    _getch();
+    return 0;
+}
