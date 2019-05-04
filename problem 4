@@ -18,7 +18,7 @@ int main()
 	
 	largest=(a>=b&&a>=c)?a:((b>=c)?b:c);
 	
-	cout<<"Largest number:"<<largest<<endl;
+	cout<<"The LARGEST of the three numbers is "<<largest<<endl;
 	
 
 	
