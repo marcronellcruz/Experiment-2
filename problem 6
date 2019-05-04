@@ -1,0 +1,25 @@
+#include<iostream>
+#include<conio.h>
+
+using namespace std;
+    
+int main()
+    {
+       int range = 22, a = 0, b= 1, fbnc = 0;
+       cout << "Fibonacci numbers: " << endl;
+      
+       for ( int c = 0 ; c < range ; c++ )
+       {
+          if ( c <= 1 )
+             fbnc = c;
+          else
+          {
+             fbnc = a + b;
+             a = b;
+             b = fbnc;
+          }
+          cout << fbnc <<",";
+       }
+       _getch();
+       return 0;
+    }
