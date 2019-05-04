@@ -1,0 +1,24 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    double gallons, amount;
+    
+    cout <<"Enter water consumption in gallons: "; 
+	cin >> gallons;
+    
+	cout <<"Enter unpaid amount: "; 
+	cin >> amount;
+    
+    if (amount <= 0)
+    cout << "Total bill:" << 35 + (1.10 * gallons) << " pesos";
+    
+    else if (amount > 0)
+    cout << "Total bill:" << (35 + (1.10 * gallons)) + 20 << " pesos";
+
+	_getch();
+    return 0;
+}
